@@ -1,1 +1,18 @@
-
+body{
+  font-size: 16px;
+  line-height: 30px;
+  color: $default;
+}
+.container-main{
+  max-width: 1800px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.container{
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.title{
+  color: $title;
+}
