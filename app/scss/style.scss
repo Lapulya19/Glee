@@ -1,10 +1,11 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs';
 @import 'global';
 
 .header{
-  padding: 50px 0;
+  padding: 50px 0 38px;
   &__top{
     display: flex;
     justify-content: space-between;
@@ -12,7 +13,7 @@
     @extend %Rubik-500;
   }
   a{
-    color: #436372;
+    color: $accent;
   }
 }
 .logo{
@@ -140,7 +141,8 @@
     margin-bottom: 10px;
   }
   &__name {
-    color: #436372;
+    color: $accent;
+    @extend %Rubik-500;
   }
   &__title{
     color: $footer-c;
@@ -169,7 +171,7 @@
     max-width: 275px;
   }
   &__form{
-  @extend %DMSans-400;
+  @extend %DMSans-500;
   }
   &__text{
     margin-bottom: 35px;
@@ -210,6 +212,324 @@
     border-left: 1px solid $default;
   }
 }
+.slider-top{
+  margin-bottom: 65px;
+  &__inner{
+  background-color: #fcd7b6;
+  
+  }
+  
+  &__box-decor{
+    position: relative;
+  }
+  &__box-decor::after{
+    content: '';
+    background-image: url(../images/slider-top-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 100px;
+    right: 180px;
+    width: 630px;
+    height: 630px;
+    z-index: 0;
+  }
+
+  &__item{
+    display: flex !important;
+    justify-content: space-between; 
+    align-items: center;
+    height:850px;
+    position: relative;
+  }
+  &__title{
+    max-width: 470px;
+    font-size: 72px;
+    line-height: 70px;
+    color: $subtitle;
+    @extend %Rubik-400;
+    margin-bottom: 20px;
+  }
+  &__text{
+    max-width: 370px;
+    color: $accent;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+  &__link{
+    padding: 22px 16px 20px 20px;
+    @extend %btn;
+    max-width: 200px;
+    background-color: #a3bbc8;
+    border: none;
+    color: #fff;
+    @extend %Rubik-400;
+  }
+  &__img{
+    padding-top: 60px;
+  }
+  &__btn-decor{
+    margin-left: 60px;
+  }
+
+  .slick-dots{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+      bottom: 45px;
+      display: flex;
+      right: 50%;
+      transform: translateX(50%);
+    
+    li{
+      margin: 0 5px;
+      button{
+      height: 30px;
+      width: 30px;
+      background-color: rgba($color: #fff, $alpha: .3);
+      border-radius: 50%;
+      color: #243f4d;
+      font-size: 15px;
+      line-height: 12px;
+      @extend %Rubik-400;
+      }
+    }
+      .slick-active{
+        background-color: #fff;
+        border-radius: 50%;
+      }
+    }
+    
+  }
+
+  .info{
+    background-color: $bg;
+    
+    &__items{
+       display: flex;
+       justify-content: space-around;
+    }
+    &__item{
+       display: flex;
+       padding: 45px 150px;
+    }
+    &__item + &__item{
+       border-left: 1px solid #e8e4df;
+    }
+    &__img{
+       margin-right: 25px;
+       position: relative;
+    }
+    &__img::after{
+     content:'';
+     border-radius: 50%;
+     background-color: rgb(163, 187, 200);
+     opacity: 0.341;
+     position: absolute;
+     width: 21px;
+     height: 20px;
+     top: 18px;
+     right: -9px;
+    }
+    &__box{
+       max-width: 220px;
+    }
+    
+    &__title{
+       @extend %DMSans-700;
+       color: #414141;
+       font-size: 18px;
+       line-height: 24px;
+       margin-bottom: 4px;
+    }
+    &__text{
+       @extend %DMSans-400;
+       font-size: 16px;
+       line-height: 28px;
+    }
+ }
+ .products{
+   margin-bottom: 95px;
+   &__title{
+     margin-bottom: 25px;
+   }
+   &__filter-list{
+     display: flex;
+     justify-content: center;
+     margin-bottom: 77px;
+   }
+   &__filter-item+ .products__filter-item{
+     margin-left: 25px;
+   }
+   &__item-link{
+     color: #8b8b8b;
+   }
+   &__all{
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     grid-template-rows: repeat(2, 1fr);
+     grid-gap: 35px;
+     margin-bottom: 185px;
+   }
+   &__all-item{
+     width: 270px;
+     height: 380px;
+     border-radius: 10px;
+     background-color: rgb(255, 255, 255);
+     box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-end;
+     align-items: center;
+     padding: 5px;
+   }
+   &__all-img{
+    max-width: 240px;
+    max-height: 200px;
+    margin-bottom: 70px;
+   }
+   &__all-title{
+     @extend %DMSans-500;
+     color: $subtitle;
+   }
+   &__all-price{
+     margin-bottom: 35px;
+     @extend %DMSans-700;
+     color: #a3bbc8;
+   }
+   &__card-inner{
+     display: flex;
+     justify-content: space-between;
+   }
+   &__card{
+     background-color: #feefe2;
+     display: flex;
+     align-items: center;
+     justify-content: flex-end;
+     max-width: 870px;
+     width: 100%;
+     height: 390px;
+     position: relative;
+     padding-right: 170px;
+   }
+   &__card+ .products__card{
+     margin-left: 30px;
+   }
+   &__card-img{
+     position: absolute;
+     bottom:80px;
+     left: 140px;
+   }
+   &__card-title{
+     @extend %DMSans-700;
+     color: $subtitle;
+     max-width: 255px;
+     font-size: 26px;
+     line-height: 32px;
+     margin-bottom: 15px;
+   }
+   &__card-text{
+     max-width: 270px;
+     @extend %Rubik-400;
+     color: $subtitle;
+     margin-bottom: 20px;
+   }
+   &__card-btn{
+     @extend %btn;
+     @extend %Rubik-500;
+     font-size: 15px;
+   }
+   &__btn-decor{
+     margin-left: 40px;
+     
+   }
+ }
+
+ .design{
+  &__title{
+    margin-bottom: 25px;
+  }
+  &__filter-list{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+  }
+  &__filter-item+ .design__filter-item{
+    margin-left: 25px;
+  }
+  &__item-link{
+    color: #8b8b8b;
+  }
+  &__all{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 35px;
+    margin-bottom: 185px;
+  }
+  &__all-item{
+    width: 370px;
+    height: 250px;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    padding: 40px 0 35px 32px;
+    position: relative;
+  }
+  &__all-img{
+   max-height: 185px;
+   max-width: 270px;
+   position: absolute;
+   bottom: 35px;
+   right: 0;
+    
+  }
+  &__all-img3{
+    right: 50px;
+    bottom: 45px;
+  }
+  &__all-img5{
+    right: 30px;
+  }
+  &__all-content{
+    max-width: 173px;
+  }
+  &__all-title{
+    @extend %DMSans-700;
+    color: #191919;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  &__all-price{
+    margin-bottom: 35px;
+    @extend %DMSans-700;
+    color: #a3bbc8;
+  }
+}
+.video{
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  &__btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+  }
+}
+
+
+ 
+
+ 
+
+
+
+
+
+
 
 
 
