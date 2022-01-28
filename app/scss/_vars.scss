@@ -2,6 +2,8 @@ $default: #7b7b7b;
 $title: #191919;
 $subtitle: #243f4d;
 $footer-c:#1f2044;
+$accent: #436372;
+$bg:#fef7f0;
 
 
 %DMSans-400{
@@ -32,4 +34,22 @@ $footer-c:#1f2044;
 %Rubik-500{
   font-family: 'Rubik-Medium', sans-serif;
   font-weight: 500;
+}
+%btn{
+  display: flex;
+  max-width: 180px;
+  width: 100%;
+  padding: 22px 18px 25px 20px;
+  font-size: 15px;
+  line-height: 12px;
+  background-color: transparent;
+  border: 1px solid #b3b7b5;
+  color: $accent;
+}
+
+@function max($numbers...){
+  @return m#{a}x(#{$numbers});
+}
+@function min($numbers...){
+  @return m#{i}n(#{$numbers});
 }
