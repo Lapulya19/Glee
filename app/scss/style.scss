@@ -5,12 +5,13 @@
 @import 'global';
 
 .header{
-  padding: 50px 0 38px;
+  
   &__top{
     display: flex;
     justify-content: space-between;
     align-items: center;
     @extend %Rubik-500;
+    padding: 50px 0 38px;
   }
   a{
     color: $accent;
@@ -247,7 +248,7 @@
     font-size: 72px;
     line-height: 70px;
     color: $subtitle;
-    @extend %Rubik-400;
+    @extend %Rubik-500;
     margin-bottom: 20px;
   }
   &__text{
@@ -256,6 +257,7 @@
     font-size: 18px;
     line-height: 30px;
     margin-bottom: 20px;
+    @extend %Rubik-400;
   }
   &__link{
     padding: 22px 16px 20px 20px;
@@ -358,6 +360,7 @@
      display: flex;
      justify-content: center;
      margin-bottom: 77px;
+     @extend %DMSans-700;
    }
    &__filter-item+ .products__filter-item{
      margin-left: 25px;
@@ -383,6 +386,9 @@
      justify-content: flex-end;
      align-items: center;
      padding: 5px;
+     position: relative;
+     overflow: hidden;
+     
    }
    &__all-img{
     max-width: 240px;
@@ -392,12 +398,49 @@
    &__all-title{
      @extend %DMSans-500;
      color: $subtitle;
+     font-size: 16px;
+     line-height: 24px;
    }
    &__all-price{
      margin-bottom: 35px;
      @extend %DMSans-700;
      color: #a3bbc8;
    }
+   &__all-tools{
+     position: absolute;
+     display: flex;
+     bottom: 152px;
+     transform: translateY(500%);
+     transition: all .3s;
+   }
+   &__all-item:hover{
+     .products__all-tools{
+     transform: translateY(0);
+     }
+   }
+   &__tools {
+     width: 45px;
+     height: 45px;
+     background-color: #fff;
+     border-radius: 50%;
+     box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+     text-align: center;
+     line-height: 55px;
+     transition: all .3s;
+   }
+   &__tools+ .products__tools{
+     margin-left: 20px;
+   }
+   &__tools:hover{
+    background-color: rgb(163, 187, 200);
+    
+    .products__tools-link{
+      path{
+        fill:#fff;
+      }
+    }
+   }
+  
    &__card-inner{
      display: flex;
      justify-content: space-between;
@@ -434,10 +477,11 @@
      @extend %Rubik-400;
      color: $subtitle;
      margin-bottom: 20px;
+     font-size: 16px;
+     line-height: 24px;
    }
    &__card-btn{
      @extend %btn;
-     @extend %Rubik-500;
      font-size: 15px;
    }
    &__btn-decor{
@@ -454,6 +498,7 @@
     display: flex;
     justify-content: center;
     margin-bottom: 70px;
+    @extend %DMSans-700;
   }
   &__filter-item+ .design__filter-item{
     margin-left: 25px;
@@ -500,7 +545,7 @@
     font-size: 20px;
     line-height: 24px;
   }
-  &__all-price{
+  &__all-type{
     margin-bottom: 35px;
     @extend %DMSans-700;
     color: #a3bbc8;

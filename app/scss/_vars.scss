@@ -36,6 +36,7 @@ $bg:#fef7f0;
   font-weight: 500;
 }
 %btn{
+  @extend %Rubik-500;
   display: flex;
   max-width: 180px;
   width: 100%;
