@@ -15,8 +15,7 @@
     <div class="container-main">
       <div class="header__top">
         <a class="logo" href="#">
-          <img class="logo__img" src="images/logo.svg" alt="logo">
-          <span class="logo__name"> Glee.</span>
+          <img class="logo__img" src="images/logo.png" alt="logo">
         </a>
         <nav class="menu">
           <ul class="menu__list">
@@ -64,7 +63,7 @@
     <section class="slider-top">
       <div class="container-main">
         <div class="slider-top__inner">
-          <div class="slider-top__box-decor">
+          <div class="slider-top__box-decor" style="background-image: url(images/slider-top-bg.png);">
             <div class="container">
               <div class="slider-top__items">
                 <div class="slider-top__item">
@@ -176,32 +175,22 @@
           Products of the week
         </h2>
         <div class="products__filter">
-          <ul class="products__filter-list">
-            <li class="products__filter-item">
-              <a class="products__item-link" href="#">
-                All</a>
-            </li>
-            <li class="products__filter-item">
-              <a class="products__item-link" href="#">
-                Furnitures</a>
-            </li>
-            <li class="products__filter-item">
-              <a class="products__item-link" href="#">
-                Chairs</a>
-            </li>
-            <li class="products__filter-item">
-              <a class="products__item-link" href="#">
-                Lighting</a>
-            </li>
-            <li class="products__filter-item">
-              <a class="products__item-link" href="#">
-                Decor</a>
-            </li>
-          </ul>
+          <div class="products__filter-list">
+              <button type="button" class="products__btn" data-filter="all">
+                All</button>
+              <button type="button" class="products__btn" data-filter=".furnitures" >
+                Furnitures</button>
+              <button type="button" class="products__btn" data-filter=".chairs" >
+                Chairs</button>
+              <button type="button" class="products__btn" data-filter=".lighting" >
+                Lighting</button>
+              <button type="button" class="products__btn" data-filter=".decor" >
+                Decor</button>
+          </div>
         </div>
 
         <div class="products__all">
-          <div class="products__all-item">
+          <div class="products__all-item mix furnitures decor">
             <img class="products__all-img" src="images/products/furniture/photo1.png" alt="wooden chair">
             <h5 class="products__all-title">Wooden radio</h5>
             <p class="products__all-price">$29.00</p>
@@ -235,7 +224,7 @@
               </div>
             </div>
           </div>
-          <div class="products__all-item">
+          <div class="products__all-item mix chairs">
             <img class="products__all-img" src="images/products/furniture/photo2.png" alt="wooden chair">
             <h5 class="products__all-title">Wooden chair</h5>
             <p class="products__all-price">$29.00</p>
@@ -269,7 +258,7 @@
               </div>
             </div>
           </div>
-          <div class="products__all-item">
+          <div class="products__all-item mix chairs">
             <img class="products__all-img" src="images/products/furniture/photo3.png" alt="wooden chair">
             <h5 class="products__all-title">White chair</h5>
             <p class="products__all-price">$29.00</p>
@@ -303,7 +292,7 @@
               </div>
             </div>
           </div>
-          <div class="products__all-item">
+          <div class="products__all-item mix chairs">
             <img class="products__all-img" src="images/products/furniture/photo4.png" alt="wooden chair">
             <h5 class="products__all-title">Wooden chair</h5>
             <p class="products__all-price">$29.00</p>
@@ -337,7 +326,7 @@
               </div>
             </div>
           </div>
-          <div class="products__all-item">
+          <div class="products__all-item mix furnitures decor">
             <img class="products__all-img" src="images/products/furniture/photo5.png" alt="wooden chair">
             <h5 class="products__all-title">Wooden radio</h5>
             <p class="products__all-price">$29.00</p>
@@ -371,7 +360,7 @@
               </div>
             </div>
           </div>
-          <div class="products__all-item">
+          <div class="products__all-item mix chairs">
             <img class="products__all-img" src="images/products/furniture/photo6.png" alt="wooden chair">
             <h5 class="products__all-title">Wooden chair</h5>
             <p class="products__all-price">$29.00</p>
@@ -405,7 +394,7 @@
               </div>
             </div>
           </div>
-          <div class="products__all-item">
+          <div class="products__all-item mix furnitures decor">
             <img class="products__all-img" src="images/products/furniture/photo7.png" alt="wooden table">
             <h5 class="products__all-title">Retro table</h5>
             <p class="products__all-price">$29.00</p>
@@ -439,7 +428,7 @@
               </div>
             </div>
           </div>
-          <div class="products__all-item">
+          <div class="products__all-item mix furnitures decor">
             <img class="products__all-img" src="images/products/furniture/photo8.png" alt="wooden table">
             <h5 class="products__all-title">Retro table</h5>
             <p class="products__all-price">$29.00</p>
@@ -478,7 +467,7 @@
       <div class="products__cards">
         <div class="container-main">
           <div class="products__card-inner">
-            <div class="products__card">
+            <div class="products__card mix lighting decor">
               <img class="products__card-img" src="images/products/decor/lamp1.png" alt="lamp">
               <div class="products__card-content">
                 <div class="products__card-title">Mirum Notare Tellus</div>
@@ -492,7 +481,7 @@
                   </svg></a>
               </div>
             </div>
-            <div class="products__card">
+            <div class="products__card mix lighting decor">
               <img class="products__card-img" src="images/products/decor/lamp2.png" alt="lamp">
               <div class="products__card-content">
                 <div class="products__card-title">Malesuada Tempor Euismod</div>
@@ -518,85 +507,69 @@
           New Design
         </h2>
         <div class="design__filter">
-          <ul class="design__filter-list">
-            <li class="design__filter-item">
-              <a class="design__item-link" href="#">
-                All</a>
-            </li>
-            <li class="design__filter-item">
-              <a class="design__item-link" href="#">
-                Furnitures</a>
-            </li>
-            <li class="design__filter-item">
-              <a class="design__item-link" href="#">
-                Chairs</a>
-            </li>
-            <li class="design__filter-item">
-              <a class="design__item-link" href="#">
-                Lighting</a>
-            </li>
-            <li class="design__filter-item">
-              <a class="design__item-link" href="#">
-                Decor</a>
-            </li>
-          </ul>
+          <div class="products__filter-list">
+            <button type="button" class="design__btn" data-filter="all">
+              All</button>
+            <button type="button" class="design__btn" data-filter=".furnitures" >
+              Furnitures</button>
+            <button type="button" class="design__btn" data-filter=".chairs" >
+              Chairs</button>
+            <button type="button" class="design__btn" data-filter=".lighting" >
+              Lighting</button>
+            <button type="button" class="design__btn" data-filter=".decor" >
+              Decor</button>
+        </div>
         </div>
 
         <div class="design__all">
-          <div class="design__all-item">
+          <div class="design__all-item mix furnitures" style="background-image: url(images/products/design/design1.jpg);">
             <div class="design__all-content">
               <h5 class="design__all-title">Beat Flat Pendant
                 Black</h5>
               <p class="design__all-type">Classic</p>
             </div>
-            <img class="design__all-img" src="images/products/design/design1.png" alt="wooden chair">
           </div>
-          <div class="design__all-item">
+          <div class="design__all-item mix furnitures" style="background-image: url(images/products/design/design2.jpg);">
             <div class="design__all-content">
               <h5 class="design__all-title">Lampe Sur Pieds
                 Bamboo</h5>
               <p class="design__all-type">Classic</p>
             </div>
-            <img class="design__all-img" src="images/products/design/design2.png" alt="wooden chair">
           </div>
-          <div class="design__all-item">
+          <div class="design__all-item mix chairs" style="background-image: url(images/products/design/design3.jpg);">
             <div class="design__all-content">
               <h5 class="design__all-title">Rattan Rocking
                 Chair</h5>
               <p class="design__all-type">Classic</p>
             </div>
-            <img class="design__all-img design__all-img3" src="images/products/design/design3.png" alt="wooden chair">
           </div>
-          <div class="design__all-item">
+          <div class="design__all-item mix furnitures" style="background-image: url(images/products/design/design4.jpg);">
             <div class="design__all-content">
               <h5 class="design__all-title">Rattan Rocking
                 Chair</h5>
               <p class="design__all-type">Classic</p>
             </div>
-            <img class="design__all-img" src="images/products/design/design4.png" alt="wooden chair">
           </div>
-          <div class="design__all-item">
+          <div class="design__all-item mix chairs" style="background-image: url(images/products/design/design5.jpg);">
             <div class="design__all-content">
               <h5 class="design__all-title">Rattan Rocking
                 Chair</h5>
               <p class="design__all-type">Classic</p>
             </div>
-            <img class="design__all-img design__all-img5" src="images/products/design/design5.png" alt="wooden chair">
           </div>
-          <div class="design__all-item">
+          <div class="design__all-item mix furnitures" style="background-image: url(images/products/design/design6.jpg);">
             <div class="design__all-content">
               <h5 class="design__all-title">Lampe Sur Pieds
                 Bamboo</h5>
               <p class="design__all-type">Classic</p>
             </div>
-            <img class="design__all-img" src="images/products/design/design6.png" alt="wooden chair">
           </div>
         </div>
       </div>
     </section>
 
     <section class="video" style="background-image: url(images/video-bg.jpg);">
-      <a class="video__link" data-fancybox href="https://www.youtube.com/watch?v=tBTNMo77h2Q&ab_channel=QiongCooking">
+      <a class="video__link" data-fancybox href="https://www.youtube.com/watch?v=EV5vjsUJqgE&ab_channel=GenaGor">
         <img class="video__btn" src="images/play-btn.svg" alt="play-btn">
       </a>
     </section>
@@ -613,67 +586,77 @@
           <div class="article__items">
             <div class="article__item">
               <div class="article__item-news">
-                <p class="article__news-decor">news</p>
+                <p class="article__news-decor">
+                  <a class="article__news-link" href="#">news</a>
+                </p>
               </div>
-              <a class="article__item-link" href="#">
+              <div class="article__item-box" href="#">
                 <img class="article__item-img" src="images/article/1.jpg" alt="news">
                 <div class="article__item-content">
-                  <p class="article__item-text">Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                    minim veniam
+                  <p class="article__item-text"><a class="article__item-link" href="#">
+                     Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                      minim veniam
                   </p>
                   <div class="article__item-info">
                     <div class="article__info-date">
                        28 JANUARY, 2020
                     </div>
                     <div class="article__info-author">
-                       BY ADMIN
+                      <a class="article__author-link" href="#"> BY ADMIN</a>
                     </div>
                   </div>
                 </div>
               </a>
             </div>
+            </div>
 
             <div class="article__item">
               <div class="article__item-news">
-                <p class="article__news-decor">news</p>
+                <p class="article__news-decor">
+                  <a class="article__news-link" href="#">news</a>
+                </p>
               </div>
-              <a class="article__item-link" href="#">
+              <div class="article__item-box" href="#">
                 <img class="article__item-img" src="images/article/2.jpg" alt="news">
                 <div class="article__item-content">
-                  <p class="article__item-text">Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore
+                  <p class="article__item-text">
+                    <a class="article__item-link" href="#">Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore</a>
                   </p>
                   <div class="article__item-info">
                     <div class="article__info-date">
                        28 JANUARY, 2020
                     </div>
                     <div class="article__info-author">
-                       BY ADMIN
+                      <a class="article__author-link" href="#"> BY ADMIN</a>
                     </div>
                   </div>
                 </div>
-              </a>
+              </div>
             </div>
 
             <div class="article__item">
               <div class="article__item-news">
-                <p class="article__news-decor">news</p>
+                <p class="article__news-decor">
+                  <a class="article__news-link" href="#">news</a>
+                </p>
               </div>
-              <a class="article__item-link" href="#">
+              <div class="article__item-box" href="#">
                 <img class="article__item-img" src="images/article/3.jpg" alt="news">
                 <div class="article__item-content">
-                  <p class="article__item-text">Rncididunt ut labore et dolore magna aliqua. Ut enim
+                  <p class="article__item-text">
+                    <a class="article__item-link" href="#">Rncididunt ut labore et dolore magna aliqua. Ut enim</a>
                   </p>
                   <div class="article__item-info">
                     <div class="article__info-date">
                        28 JANUARY, 2020
                     </div>
                     <div class="article__info-author">
-                       BY ADMIN
+                      <a class="article__author-link" href="#"> BY ADMIN</a>
                     </div>
                   </div>
                 </div>
-              </a>
+              </div>
             </div>
           </div>
         </div>
@@ -708,10 +691,11 @@
     <div class="container">
       <div class="footer-top">
         <div class="footer-top__item-contacts">
-          <a class="logo footer-top__logo" href="#">
-            <img class="logo__img" src="images/logo.svg" alt="logo">
-            <span class="logo__name footer-top__name"> Glee.</span>
-          </a>
+          <div class="footer-top__logo">
+            <a class="footer-top__logo-link" href="#">
+              <img class="logo__img" src="images/logo.png" alt="logo">
+            </a>
+          </div>
           <div class="footer-top__address">
             <a class="footer-top__address-link" href="#"><span class="footer-top__contact">ADDRESS</span>: 4772 Wines
               Lane
