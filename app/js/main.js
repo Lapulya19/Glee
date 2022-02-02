@@ -6,6 +6,9 @@ $(function(){
    fade:true,
   });
 
+  var mixer = mixitup('.products__all');
+  var mixer = mixitup('.design__all');
+
   // $("").rateYo({
   //   rating:3.6,only js
   // starWidtn:"40px",
