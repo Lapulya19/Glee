@@ -766,6 +766,30 @@
     
   } 
 }
+.terms{
+  padding-top: 115px;
+  color: $subtitle;
+  @extend %Rubik-400;
+  &__title{
+    @extend %Rubik-500;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 20px;
+  }
+  &__list{
+    margin-bottom: 60px;
+    margin-left: 30px;
+  }
+  &__item + .terms__item{
+    margin-top: 20px;
+  }
+  &__item{
+    list-style: decimal-leading-zero;
+  }
+  &__text{
+    margin-bottom: 60px;
+  }
+}
 
 
  
