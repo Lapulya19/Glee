@@ -113,7 +113,6 @@
 
 .footer{
   padding: 75px 0 35px;
-  @extend %Rubik-400;
   font-size: 14px;
   line-height: 24px;
   a{
@@ -279,7 +278,6 @@
     font-size: 18px;
     line-height: 30px;
     margin-bottom: 20px;
-    @extend %Rubik-400;
   }
   &__link{
     padding: 22px 16px 20px 20px;
@@ -316,7 +314,6 @@
       color: #243f4d;
       font-size: 15px;
       line-height: 12px;
-      @extend %Rubik-400;
       }
     }
       .slick-active{
@@ -501,7 +498,6 @@
    }
    &__card-text{
      max-width: 270px;
-     @extend %Rubik-400;
      color: $subtitle;
      margin-bottom: 20px;
      font-size: 16px;
@@ -676,6 +672,7 @@
   &__author-link{
     color: rgb(34, 41, 51);
   }
+ 
   
 }
 .partners{
@@ -698,7 +695,6 @@
     max-width: 470px;
     margin: 0 auto ;
     padding: 115px 0;
-    @extend %Rubik-400;
     font-size: 14px;
     line-height: 24px;
   }
@@ -769,7 +765,6 @@
 .terms{
   padding-top: 115px;
   color: $subtitle;
-  @extend %Rubik-400;
   &__title{
     @extend %Rubik-500;
     font-size: 24px;
@@ -790,6 +785,206 @@
     margin-bottom: 60px;
   }
 }
+.about{
+  padding: 120px 0;
+  &__inner{
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+  }
+  &__img{
+    max-width: 570px;
+    max-height: 676px;
+    width: 100%;
+    height: 100%;
+  }
+  &__box{
+    color: $subtitle;
+    border-bottom: 2px solid #e6eaf0;
+    padding-bottom: 65px;
+    margin-bottom: 35px;
+  }
+  &__info-box{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    column-gap: 20px;
+    
+  }
+  &__info{
+    
+    span{
+      display: block;
+    }
+  }
+  &__info-num{
+    @extend %Rubik-700;
+    font-size: 140px;
+    line-height: 154px;
+    color: #a3bbc8;
+  }
+  &__title{
+    color: inherit;
+    margin-bottom: 45px;
+    text-align: left;
+  }
+  &__statistics{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+  &__item{
+    display: flex;
+    column-gap: 18px;
+    @extend %DMSans-700;
+    font-size: 16px;
+    line-height: 17px;
+    color: #4c4c4c;
+  }
+  &__item--border{
+    position: relative;
+    padding: 0 34px 0 28px;
+  }
+  &__item--border::after,
+  &__item--border::before{
+    content: '';
+    position: absolute;
+    height: 80px;
+    width: 1px;
+    top: -5px;
+    
+  }
+  &__item--border::after{
+    border-right: 1px solid #e6eaf0;
+    right: 0;
+  }
+  &__item--border::before{
+    border-left: 1px solid #e6eaf0;
+    left: 0;
+    
+  }
+  &__statistics-num{
+    display: block;
+    font-size: 36px;
+    line-height: 38px;
+    color: $subtitle;
+  }
+}
+.work-info{
+  background-color: #fcd7b6;
+  padding: 88px 0 82px;
+  color: $subtitle;
+  @extend %DMSans-700;
+  &__inner{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+  &__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  &__img-box{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  &__num{
+    font-size: 36px;
+    line-height: 38px;
+    margin-bottom: 20px;
+  }
+  &__text{
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+.team{
+  margin-bottom: 62px;
+  padding-top: 120px;
+  &__inner{
+    display: flex;
+    color: $subtitle;
+    column-gap: 95px;
+  }
+  &__content{
+    max-width: 310px;
+  }
+  &__title{
+    text-align: left;
+    color: $subtitle;
+    margin-bottom: 30px;
+  }
+  &__text{
+    margin-bottom: 40px;
+  }
+  &__btn-text{
+    @extend %Poppins-600;
+  }
+  &__btn{
+    @extend %btn;
+    border: none;
+    background-color: rgb(163, 187, 200);
+    color: #fff;
+    border-radius: 5px;
+    width: 170px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 100px;
+  }
+  &__box-item{
+    max-width: 370px;
+    width: 100%;
+    position: relative;
+    
+
+  }
+  &__box-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 27px 20px 25px 23px;
+    max-width: 326px;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    background-color: #fff;
+    bottom: -62px;
+  }
+  &__box-title{
+    font-size: 22px;
+    line-height: 26px;
+    color: $accent;
+    margin-bottom: 12px;
+  }
+  &__box-text{
+    @extend %Rubik-400;
+    color: #565872;
+  }
+  &__box-links{
+    display: flex;
+  }
+  &__box-link{
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+    background-color: rgb(246, 246, 246);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__box-link + .team__box-link{
+    margin-left: 7px;
+  }
+}
+
+
 
 
  

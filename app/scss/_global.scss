@@ -9,6 +9,7 @@ body{
   color: $default;
   display: flex;
   flex-direction: column;
+  @extend %Rubik-400;
 }
 a{
   cursor: pointer;
@@ -32,4 +33,7 @@ flex-grow: 1;
   font-size: 36px;
   line-height: 44px;
   text-align: center;
+}
+.title--other{
+  color: $subtitle;
 }

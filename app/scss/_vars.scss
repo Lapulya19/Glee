@@ -20,6 +20,10 @@ $bg:#fef7f0;
   font-family: 'DMSans-Bold', sans-serif;
   font-weight: 700;
 }
+%Poppins-600{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
 
 %Poppins-700{
   font-family: 'Poppins', sans-serif;
@@ -38,6 +42,10 @@ $bg:#fef7f0;
 %Rubik-500{
   font-family: 'Rubik-Medium', sans-serif;
   font-weight: 500;
+}
+%Rubik-700{
+  font-family: 'Rubik-Bold', sans-serif;
+  font-weight: 700;
 }
 %btn{
   @extend %Rubik-500;
