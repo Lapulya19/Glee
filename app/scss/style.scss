@@ -217,7 +217,7 @@
   }
 
   &__item {
-     padding-right: 18px;
+    padding-right: 18px;
      position: relative;
 
      &::after {
@@ -225,10 +225,9 @@
         width: 3px;
         height: 13px;
         position: absolute;
-        right: 7px;
+        right: 9px;
         top: 2px;
      }
-
      &:last-child {
         padding-right: 0;
 
@@ -983,6 +982,162 @@
     margin-left: 7px;
   }
 }
+
+.product-list{
+  padding: 120px 0;
+}
+
+.filter{
+  color: $subtitle;
+  width: 270px;
+  &__title{
+    @extend %DMSans-700;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: uppercase;
+    position: relative;
+    padding-right: 56px;
+    margin-bottom: 25px;
+    &::after{
+      content: "";
+      width: 39px;
+      height: 3px;
+      background-color: rgb(163, 187, 200);
+      top: 10px;
+      right: 0;
+      position: absolute
+    }
+  }
+}
+.filter-category{
+  padding-bottom: 50px;
+  &__label{
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: block;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  &__input{
+    @extend %checkbox-hidden;
+    &:checked + .filter-category__checkbox{
+      background-color: #edf1f4;
+    }
+  }
+  &__checkbox{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 14px 22px 14px 13px;
+    border-radius: 5px; 
+  }
+}
+.filter-price{
+  padding-bottom: 80px;
+  &__label{
+  display: flex;
+  justify-content: space-between;
+}
+}
+.irs--flat .irs-max, .irs-min{
+  display: none;
+}
+.irs--flat .irs-line {
+  top: 6px;
+  height: 3px;
+  background-color: rgb(163, 187, 200);
+  opacity: 0.659;
+  border-radius: 0;
+}
+.irs--flat .irs-bar {
+  top: 6px;
+  height: 5px;
+  background-color: rgb(163, 187, 200);
+}
+.irs--flat .irs-handle {
+  top: 0;
+  width: 15px;
+  height: 15px;
+  background-color: #a3bbc8;
+}
+.irs--flat .irs-handle>i:first-child{
+  display: none;
+}
+
+.irs-from, .irs-to, .irs-single {
+  top: 35px;
+  left: 0;
+  display: none;
+}
+.irs--flat .irs-from:before, .irs--flat .irs-to:before, .irs--flat .irs-single:before{
+  display: none;
+}
+
+.filter-brand{
+  padding-bottom: 50px;
+  &__label{
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: block;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  &__input{
+    @extend %checkbox-hidden;
+    &:checked + .filter-brand__checkbox{
+      background-color: #edf1f4;
+    }
+  }
+  &__checkbox{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 14px 22px 14px 13px;
+    border-radius: 5px; 
+  }
+}
+
+.filter-recent{
+  &__item{
+    display: flex;
+    align-items: center;
+    column-gap: 17px;
+    & + .filter-recent__item{
+      margin-top: 24px;
+      color: #333333;
+    }
+  }
+  &__box-img{
+    width: 70px;
+    height: 70px;
+    border: 2px solid rgb(242, 242, 242);
+    display: flex;
+    justify-content: center;
+    background-color: #fefefe;
+  }
+  &__title{
+    font-size: 14px;
+    line-height: 15.87px;
+    color: #333333;
+    margin-bottom: 3px;
+  }
+  &__price{
+    font-size: 15px;
+    line-height: 27px;
+  }
+  &__star{
+    margin-bottom: 3px;
+  }
+  
+}
+.jq-ry-container{
+  padding: 0;
+}
+
+
 
 
 
