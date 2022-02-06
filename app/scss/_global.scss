@@ -37,3 +37,29 @@ flex-grow: 1;
 .title--other{
   color: $subtitle;
 }
+
+.pagination{
+  &__list{
+    display: flex;
+    justify-content: center;
+  }
+  &__item{
+    padding: 5px 15px;
+    border: 1px solid #a3bbc8;
+    color: $subtitle;
+  }
+  &__item + .pagination__item{
+    margin-left: 15px;
+  }
+  &__btn{
+    background-color: transparent;
+    color: inherit;
+  }
+  &__link{
+    color: inherit;
+  }
+  &__item--active{
+    color: #fff;
+    background-color: #a3bbc8;
+  }
+}
