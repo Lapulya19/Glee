@@ -1563,6 +1563,158 @@
   
 }
 
+.blog{
+
+  padding: 120px 0;
+  &__inner{
+    display: flex;
+  }
+  &__aside{
+    width: 270px;
+    
+  }
+  &__content{
+    max-width: 830px;
+    margin-right: 70px;
+  }
+  &__content-img{
+    height: 500px;
+    width: 100%;
+    
+  }
+  &__content-item{
+    margin-bottom: 50px;
+  }
+  &__content-box{
+    position: relative;
+    margin-bottom: 40px;
+  }
+  &__content-info{
+    padding: 20px;
+    background-color: #a3bbc8;
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+  }
+  &__content-date,
+  &__content-author{
+    padding-left: 20px;
+    color: #fff;
+    position: relative;
+  }
+  &__content-date{
+    margin-right: 24px;
+  }
+  &__content-date::before{
+    content: '';
+    position: absolute;
+    background-image: url(../images/icons/calendar-blog.svg);
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 13px;
+    left: 0;
+    bottom: 2px;
+  }
+  &__content-author::before{
+    content: '';
+    position: absolute;
+    background-image: url(../images/icons/user.svg);
+    width: 12px;
+    height: 13px;
+    left: 0;
+    bottom: 2px;
+  }
+  &__content-link{
+    color: inherit;
+  }
+  &__content-title{
+    font-size: 36px;
+    line-height: 44px;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  &__content-text{
+    color: $subtitle;
+    margin-bottom: 40px;
+  }
+  &__content-btn{
+    @extend %btn;
+    padding: 20px 18px 20px 20px;
+    border-color: #a3bbc8;
+    color: #a3bbc8;
+  }
+  &__content-arrow{
+    margin-left: auto;
+
+  }
+  .pagination__list{
+    justify-content: flex-start;
+    margin-top: 27px;
+  }
+  .filter__title{
+    color: $subtitle;
+  }
+  .filter-category__text{
+    color: $subtitle;
+  }
+
+}
+
+.filter-search{
+  &__form{
+    margin-bottom: 55px;
+    
+  }
+ 
+  &__input{
+    height: 43px;
+    border: 2px solid #eef2f5;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    padding: 0 15px;
+    width: 226px;
+  }
+  &__btn{
+    padding: 13px 15px;
+    background-color: #eef2f5;
+    border-radius: 5px;
+    transform: translateY(3px);
+    margin-left: -7px;
+  }
+}
+
+.blog-recent{
+  &__item{
+    display: flex;
+    margin-bottom: 20px;
+  }
+  &__img{
+    width: 70px;
+    height: 70px;
+    margin-right: 18px;
+  }
+  &__link{
+    font-size: 14px;
+    line-height: 20px;
+    color: #333;
+  }
+  &__date{
+    font-size: 12px;
+    color: #9a9a9a;
+    padding-left: 20px;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      background-image: url(../images/icons/calendar.svg);
+      width: 12px;
+      height: 13px;
+      left: 0;
+      bottom: 2px;
+    }
+  }
+}
+
 
 
 
