@@ -1,0 +1,30 @@
+.work-info{
+  background-color: #fcd7b6;
+  padding: 88px 0 82px;
+  color: $subtitle;
+  @extend %DMSans-700;
+  &__inner{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+  &__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  &__img-box{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  &__num{
+    font-size: 36px;
+    line-height: 38px;
+    margin-bottom: 20px;
+  }
+  &__text{
+    font-size: 18px;
+    line-height: 32px;
+  }
+}

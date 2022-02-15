@@ -1,0 +1,124 @@
+.slider-top{
+  margin-bottom: 65px;
+  &__inner{
+  background-color: #fcd7b6;
+  }
+  
+  &__box-decor{
+    background-repeat: no-repeat;
+    background-position: 90% 60%;
+  }
+
+  &__item{
+    display: flex !important;
+    justify-content: space-between; 
+    align-items: center;
+    height:850px;
+    position: relative;
+  }
+  &__title{
+    max-width: 470px;
+    font-size: 72px;
+    line-height: 70px;
+    color: $subtitle;
+    @extend %Rubik-500;
+    margin-bottom: 20px;
+  }
+  &__text{
+    max-width: 370px;
+    color: $accent;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+  &__link{
+    padding: 22px 16px 20px 20px;
+    @extend %btn;
+    max-width: 200px;
+    background-color: #a3bbc8;
+    border: none;
+    color: #fff;
+    @extend %Rubik-400;
+  }
+  &__img{
+    padding-top: 80px;
+  }
+  &__btn-decor{
+    margin-left: 60px;
+  }
+
+  .slick-dots{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+      bottom: 45px;
+      display: flex;
+      right: 50%;
+      transform: translateX(50%);
+    
+    li{
+      margin: 0 5px;
+      button{
+      height: 30px;
+      width: 30px;
+      background-color: rgba($color: #fff, $alpha: .3);
+      border-radius: 50%;
+      color: #243f4d;
+      font-size: 15px;
+      line-height: 12px;
+      }
+    }
+      .slick-active{
+        background-color: #fff;
+        border-radius: 50%;
+      }
+    }
+    
+  }
+
+  .info{
+    background-color: $bg;
+    
+    &__items{
+       display: flex;
+       justify-content: space-around;
+    }
+    &__item{
+       display: flex;
+       padding: 45px 150px;
+    }
+    &__item + &__item{
+       border-left: 1px solid #e8e4df;
+    }
+    &__img{
+       margin-right: 25px;
+       position: relative;
+    }
+    &__img::after{
+     content:'';
+     border-radius: 50%;
+     background-color: rgb(163, 187, 200);
+     opacity: 0.341;
+     position: absolute;
+     width: 21px;
+     height: 20px;
+     top: 18px;
+     right: -9px;
+    }
+    &__box{
+       max-width: 220px;
+    }
+    
+    &__title{
+       @extend %DMSans-700;
+       color: #414141;
+       font-size: 18px;
+       line-height: 24px;
+       margin-bottom: 4px;
+    }
+    &__text{
+       @extend %DMSans-400;
+       font-size: 16px;
+       line-height: 28px;
+    }
+ }
