@@ -1,0 +1,84 @@
+.footer{
+  padding: 75px 0 35px;
+  font-size: 14px;
+  line-height: 24px;
+  a{
+    color: $default;
+  }
+}
+.footer-top{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 60px;
+  border-bottom: 1px solid #dae4e9;
+  &__logo{
+    margin-bottom: 10px;
+  }
+  &__title{
+    color: $footer-c;
+    @extend %DMSans-700;
+    text-transform: uppercase;
+    margin: 20px 0 10px;
+  }
+  &__item-contacts{
+    max-width: 200px;
+  }
+  &__address, 
+  &__phone{
+    margin-bottom: 10px;
+  }
+  &__contact{
+    text-transform: uppercase;
+  }
+  &__list-item{
+    margin-bottom: 10px;
+  }
+  &__item{
+    max-width: 140px;
+    margin: 0 20px;
+  }
+  &__item-form{
+    max-width: 275px;
+  }
+  &__form{
+  @extend %DMSans-500;
+  }
+  &__text{
+    margin-bottom: 35px;
+  }
+  &__input{
+    background-color: #fef7f0;
+    padding: 10px;
+    max-width: 170px;
+    width: 100%;
+  }
+  &__input::placeholder{
+    color: #234969;
+    font-size: 12px;
+  }
+  &__btn{
+    background-color: #a3bbc8;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+  }
+}
+.footer-bottom{
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 20px;
+  height: 90px;
+  align-items: center;
+  &__list{
+    display: flex;
+    justify-content: space-between; 
+  }
+  &__item{
+    padding: 0 10px;
+    
+  }
+  &__item + .footer-bottom__item{
+    border-left: 1px solid $default;
+  }
+}

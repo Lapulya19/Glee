@@ -1,0 +1,85 @@
+.about{
+  padding: 120px 0;
+  &__inner{
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+  }
+  &__img{
+    max-width: 570px;
+    max-height: 676px;
+    width: 100%;
+    height: 100%;
+  }
+  &__box{
+    color: $subtitle;
+    border-bottom: 2px solid #e6eaf0;
+    padding-bottom: 65px;
+    margin-bottom: 35px;
+  }
+  &__info-box{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    column-gap: 20px;
+    
+  }
+  &__info{
+    
+    span{
+      display: block;
+    }
+  }
+  &__info-num{
+    @extend %Rubik-700;
+    font-size: 140px;
+    line-height: 154px;
+    color: #a3bbc8;
+  }
+  &__title{
+    color: inherit;
+    margin-bottom: 45px;
+    text-align: left;
+  }
+  &__statistics{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+  &__item{
+    display: flex;
+    column-gap: 18px;
+    @extend %DMSans-700;
+    font-size: 16px;
+    line-height: 17px;
+    color: #4c4c4c;
+  }
+  &__item--border{
+    position: relative;
+    padding: 0 34px 0 28px;
+  }
+  &__item--border::after,
+  &__item--border::before{
+    content: '';
+    position: absolute;
+    height: 80px;
+    width: 1px;
+    top: -5px;
+    
+  }
+  &__item--border::after{
+    border-right: 1px solid #e6eaf0;
+    right: 0;
+  }
+  &__item--border::before{
+    border-left: 1px solid #e6eaf0;
+    left: 0;
+    
+  }
+  &__statistics-num{
+    display: block;
+    font-size: 36px;
+    line-height: 38px;
+    color: $subtitle;
+  }
+}

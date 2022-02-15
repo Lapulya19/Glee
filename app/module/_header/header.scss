@@ -1,0 +1,106 @@
+.header{
+  
+  &__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @extend %Rubik-500;
+    padding: 50px 0 38px;
+  }
+  a{
+    color: $accent;
+  }
+}
+
+.menu{
+  &__list{
+    display: flex;
+  }
+  &__list-item{
+    font-size: 15px;
+    line-height: 12px;
+  }
+  &__list-item + .menu__list-item{
+    margin-left: 30px;
+  }
+}
+.nav-users{
+  display: flex;
+  &__search{
+    background-color: #edf1f4;
+    border-radius: 50%;
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+    position: relative;
+  }
+  &__search-img{
+    position: absolute;
+    top: 33%;
+    left: 35%;
+  }
+  &__favorites{
+    background-color: #fcd7b6;
+    border-radius: 45% 0 0 45%;
+    position: relative;
+    height: 52px;
+    width: 92px;
+  }
+  &__favorites::after{
+    content: url(../images/icons/users-decor.svg);
+    position: absolute;
+    top: 30%;
+    right: 0;
+  }
+  &__favorites-img{
+    position: absolute;
+    top: 41%;
+    right: 25%;
+  }
+  &__cart{
+    background-color: #fcd7b6;
+    border-radius: 0 45% 45% 0;
+    margin-right: 20px;
+    height: 52px;
+    width: 92px;
+    position: relative;  
+  }
+  &__cart-img{
+    position: absolute;
+    top: 41%;
+    left: 25%;
+  }
+  &__others{
+    background-color: #a3bbc8;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: relative;  
+  }
+  &__others-img {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    }
+  &__num-favorites,&__num-cart{
+  @extend %DMSans-400;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  font-size: 10px;
+  line-height: 16px;
+  color: #243f4d;
+  text-align: center;
+  
+  }
+  &__num-favorites{
+    top: 26%;
+    right: 14%;
+  }
+  &__num-cart{
+    top: 26%;
+    left: 39%;
+  }
+}
