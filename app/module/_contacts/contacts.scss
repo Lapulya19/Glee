@@ -1,0 +1,140 @@
+.contact{
+  padding-top: 120px;
+  &__subtitle{
+    @extend %Poppins-700;
+    line-height: 20px;
+    color: #a3bbc8;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  &__title{
+    @extend %DMSans-700;
+    font-size: 35px;
+    line-height: 57px;
+    color: $accent;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  &__items{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+  }
+  &__item{
+    width: 370px;
+    height: 380px;
+    background-color: #fbfbfb;
+    text-align: center;
+    padding: 70px 0;
+    transition: all .3s;
+    border: 2px solid transparent;
+  }
+  &__item:hover{
+    border: 2px solid #a3bbc8;
+    .contact__box-img{
+      background-color: #a3bbc8;
+      path{
+        fill: #fff;
+      }
+    }
+  }
+  &__box-img{
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    background-color: #fff;
+    margin:0 auto;
+    padding-top: 18px;
+    margin-bottom: 65px;
+    transition: all .3s
+  }
+  
+  &__item-title{
+    @extend %DMSans-700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #222;
+    margin-bottom: 20px;
+  }
+  &__item-content{
+    color: #565872;
+  }
+  &__item-subcontent{
+    display: block;
+  }
+  &__item-link{
+    color: inherit;
+  }
+  &__send-inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__form{
+    max-width: 620px;
+    width: 100%;
+  }
+  &__input,
+  &__textarea{
+     border: none;
+     background-color: #fafafa;
+  }
+  &__input + .contact__input{
+    margin-left: 20px;
+  }
+  &__btn{
+    border-radius: 5px;
+  }
+  
+  
+}
+.post-comment{
+  margin-bottom: 120px;
+  &__title{
+    margin-bottom: 45px;
+  }
+  &__input-box{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  &__input{
+    max-width: 400px;
+    width: 100%;
+    padding: 15px 40px 15px 20px;
+    
+  }
+  &__textarea{
+    height: 170px;
+    padding: 15px 20px 0;
+    margin-bottom: 40px;
+    resize: none;
+  }
+  &__input,
+  &__textarea{
+    display: block;
+    width: 100%;
+    transition: all .3s;
+    color: #333;
+  }
+  &__input--name{
+   background-image: url(../images/icons/user-form.svg);
+   background-repeat: no-repeat;
+   background-position: 95% center ;
+  }
+  &__input--email{
+    background-image: url(../images/icons/email.svg);
+    background-repeat: no-repeat;
+    background-position: 95% center ;
+   }
+   &__textarea{
+    background-image: url(../images/icons/massege.svg);
+    background-repeat: no-repeat;
+    background-position: 98% 15% ;
+   }
+  &__btn{
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #a3bbc8;
+    padding: 15px 35px;
+  }
+}
