@@ -82,3 +82,44 @@
     border-left: 1px solid $default;
   }
 }
+
+@media(max-width:840px){
+  .footer-top{
+    flex-wrap: wrap;
+    &__item-form{
+      max-width: none;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+@media(max-width:520px){
+  .footer-top__item{
+      text-align: center;
+      max-width: none;
+      width: 100%;
+    }
+    .footer-top__item-contacts{
+      max-width: none;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .footer-bottom{
+      margin-top: 20px;
+      flex-direction: column;
+      height: 80px;
+    }
+}
+
+@media(max-width:400px){
+  .footer-top__btn{
+    display: block;
+    width: 100%;
+  }
+  .footer-top__input{
+    max-width: none;
+  }
+}

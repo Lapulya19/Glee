@@ -1,5 +1,16 @@
 $(function () {
 
+   //-----------------Burger-------------//
+
+   $('.menu__btn').on ('click', function(){
+     $('.menu__list').toggleClass('menu__list--active')
+   });
+
+   $('.menu__list-item').on ('click', function(){
+    $('.menu__list').removeClass('menu__list--active')
+  })
+
+
   $('.filter-recent__star').rateYo({
     starWidth: '11px',
     normalFill: '#d6d6d6',

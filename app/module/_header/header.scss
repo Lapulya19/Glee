@@ -4,6 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     @extend %Rubik-500;
     padding: 50px 0 38px;
   }
@@ -23,9 +24,49 @@
   &__list-item + .menu__list-item{
     margin-left: 30px;
   }
+  &__btn{
+    width: 50px;
+    height: 50px;
+    background-color: #a3bbc8;
+    border-radius: 50%;
+    display: none; 
+  }
+  &__btn-box{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 30px;
+    height: 20px;
+    position: relative;
+  }
+  &__btn-decor{
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 1px;
+    
+    &::after,
+    &::before{
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 3px;
+      background-color: #fff;
+      left: 0;
+      right: 0;
+      border-radius: 1px;
+    }
+  }
+  &__btn-decor::after{
+    top: 0;
+  }
+  &__btn-decor::before{
+    bottom: 0;
+  }
 }
 .nav-users{
   display: flex;
+  
   &__search{
     background-color: #edf1f4;
     border-radius: 50%;
@@ -103,4 +144,68 @@
     top: 26%;
     left: 39%;
   }
+}
+
+
+@media(max-width:1050px){
+  .menu{
+    order: 1;
+    &__list{
+      background-color: #edf1f4;
+      padding-top: 20px;
+      position: absolute;
+      margin-top: 10px; 
+      left: 0;
+      flex-direction: column;
+      text-align: center;
+      width: 100%;
+      z-index: 5;
+      transform: translateY(-200%);
+      transition: all .3s;
+    }
+    &__list--active{
+      transform: translateY(0);
+      transition: all .3s;
+    }
+    &__btn{
+      display: block;
+      margin-left: 20px;
+    }
+    &__list-item + .menu__list-item{
+      margin-left: 0px;
+    }
+    &__list-item{
+      font-size: 24px;
+      line-height: 36px;
+      margin-bottom: 20px;
+    }
+  }
+  .nav-users{
+    margin-left: auto;
+  }
+}
+
+@media(max-width:650px){
+  .menu{
+    order: 0;
+    &__btn{
+      margin-right: 0;
+    }
+  }
+  .nav-users{
+    margin-top: 30px;
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+
+@media(max-width:450px){
+  .nav-users__cart,
+  .nav-users__favorites{
+    width: 70px;
+  }
+  .nav-users__search,
+  .nav-users__cart{
+      margin-right: 10px;
+    }
 }
