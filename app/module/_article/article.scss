@@ -3,75 +3,74 @@
   height: 890px;
   position: relative;
   &__top {
-     display: flex;
-     justify-content: space-between;
-     margin-bottom: 45px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 45px;
   }
 
   &__top-link {
-     @extend %DMSans-700;
-     font-size: 16px;
-     line-height: 20px;
-     display: flex;
-     align-items: center;
-     color: #262626;
+    @extend %DMSans-700;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #262626;
   }
-  &__item-img{
-     width: 370px;
-     height: 250px;
+  &__item-img {
+    width: 370px;
+    height: 250px;
   }
 
   &__top-img {
-     width: 7px;
-     height: 12px;
-     margin-left: 15px;
+    width: 7px;
+    height: 12px;
+    margin-left: 15px;
   }
 
   &__items {
-     display: flex;
-     justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
   }
 
   &__item {
-     max-width: 370px;
-     width: 100%;
-     border-radius: 5px;
-     position: relative;
+    max-width: 370px;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
   }
 
   &__item-content {
-     background-color: #fff;
-     padding: 30px 50px 10px 17px;
-     
+    background-color: #fff;
+    padding: 30px 50px 10px 17px;
   }
-  &__news-link{
+  &__news-link {
     color: #fff;
   }
 
   &__item-text {
-     @extend %DMSans-500;
-     font-size: 18px;
-     line-height: 22px;
-     
-     max-width: 290px;
-     padding-bottom: 16px;
-     margin-bottom: 10px;
-     border-bottom: 1px solid rgb(224, 224, 224);
-     min-height: 83px;
+    @extend %DMSans-500;
+    font-size: 18px;
+    line-height: 22px;
+
+    max-width: 290px;
+    padding-bottom: 16px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgb(224, 224, 224);
+    min-height: 83px;
   }
 
   &__item-info {
-     @extend %Rubik-500;
-     display: flex;
-     font-size: 12px;
-     color: rgb(34, 41, 51);
-     text-transform: uppercase;
+    @extend %Rubik-500;
+    display: flex;
+    font-size: 12px;
+    color: rgb(34, 41, 51);
+    text-transform: uppercase;
   }
 
   &__info-date {
-     margin-right: 40px;
+    margin-right: 40px;
   }
-  &__item-news{
+  &__item-news {
     width: 103px;
     height: 30px;
     background-color: rgb(163, 187, 200);
@@ -80,22 +79,20 @@
     top: 233px;
     left: 28px;
   }
-  &__news-decor{
+  &__news-decor {
     @extend %Poppins-700;
     text-transform: uppercase;
     text-align: center;
     font-size: 14px;
   }
-  &__item-link{
+  &__item-link {
     color: #262626;
   }
-  &__author-link{
+  &__author-link {
     color: rgb(34, 41, 51);
   }
- 
-  
 }
-.partners{
+.partners {
   height: 440px;
   width: 100%;
   z-index: -1;
@@ -103,9 +100,112 @@
   background-color: $bg;
   position: absolute;
   padding-top: 280px;
-  &__list{
+  &__list {
     display: flex;
     justify-content: space-around;
     align-items: center;
-  } 
+  }
+}
+
+@media (max-width: 1200px) {
+  .article {
+    height: 1200px;
+    &__items {
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+    &__item {
+      max-width: none;
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+    &__item-box {
+      display: flex;
+      justify-content: center;
+    }
+    &__item-news {
+      top: 30px;
+      left: 30%;
+    }
+    &__item-img {
+      border-radius: 10px;
+    }
+  }
+  .partners {
+    height: 180px;
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 930px) {
+  .article {
+    height: 1550px;
+  }
+  .partners {
+    height: 480px;
+    padding-top: 30px;
+    &__list {
+      flex-direction: column;
+    }
+    .partner__item {
+      margin-bottom: 20px;
+    }
+  }
+}
+@media (max-width: 650px) {
+  .article {
+    height: 2050px;
+    &__item-box {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__item {
+      margin-bottom: 20px;
+    }
+    &__item-news {
+      left: 20%;
+    }
+    &__top {
+      margin-bottom: 30px;
+    }
+    &__title {
+      font-size: 26px;
+      line-height: 30px;
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .article {
+    &__item-news {
+      left: 10%;
+    }
+    &__item-info {
+      font-size: 10px;
+    }
+    &__title {
+      font-size: 24px;
+      line-height: 28px;
+    }
+    &__top-link{
+       padding-left: 10px;
+    }
+  }
+}
+
+@media (max-width: 380px){
+   .article{
+      &__item-text{
+         font-size: 15px;
+         line-height: 28px;
+      }
+      &__item-info {
+         font-size: 8px;
+       }
+       &__title {
+         font-size: 20px;
+         line-height: 24px;
+     }
+   }
 }

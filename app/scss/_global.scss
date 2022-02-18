@@ -1,9 +1,9 @@
 html,
-body{
+body {
   height: 100%;
 }
 
-body{
+body {
   font-size: 16px;
   line-height: 30px;
   color: $default;
@@ -11,55 +11,62 @@ body{
   flex-direction: column;
   @extend %Rubik-400;
 }
-a{
+a {
   cursor: pointer;
 }
-.main{
-flex-grow: 1;
+.main {
+  flex-grow: 1;
 }
-.container-main{
+.container-main {
   max-width: 1800px;
   padding: 0 15px;
   margin: 0 auto;
 }
-.container{
+.container {
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 }
-.title{
+.title {
   color: $title;
   @extend %DMSans-700;
   font-size: 36px;
   line-height: 44px;
   text-align: center;
 }
-.title--other{
+.title--other {
   color: $subtitle;
 }
 
-.pagination{
-  &__list{
+.pagination {
+  &__list {
     display: flex;
     justify-content: center;
   }
-  &__item{
+  &__item {
     padding: 5px 15px;
     border: 1px solid #a3bbc8;
     color: $subtitle;
   }
-  &__item + .pagination__item{
+  &__item + .pagination__item {
     margin-left: 15px;
   }
-  &__btn{
+  &__btn {
     background-color: transparent;
     color: inherit;
   }
-  &__link{
+  &__link {
     color: inherit;
   }
-  &__item--active{
+  &__item--active {
     color: #fff;
     background-color: #a3bbc8;
+  }
+}
+
+@media (max-width: 520px) {
+  .title {
+    font-size: 28px;
+    line-height: 32px;
   }
 }
