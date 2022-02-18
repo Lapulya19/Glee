@@ -11,3 +11,15 @@
     transform: translate(-50%, -50%)
   }
 }
+
+@media(max-width:1050px){
+  .video{
+    height: 400px;
+  }
+}
+
+@media(max-width:520px){
+  .video{
+    height: 300px;
+  }
+}

@@ -1,51 +1,84 @@
-.design{
-  &__title{
+.design {
+  &__title {
     margin-bottom: 25px;
   }
-  &__filter-list{
+  &__filter-list {
     display: flex;
     justify-content: center;
     margin-bottom: 70px;
     @extend %DMSans-700;
   }
-  &__btn{
+  &__btn {
     background-color: transparent;
     color: #8b8b8b;
   }
-  .mixitup-control-active{
+  .mixitup-control-active {
     color: $title;
   }
-  
-  &__btn + .design__btn{
+
+  &__btn + .design__btn {
     margin-left: 25px;
   }
-  &__item-link{
+  &__item-link {
     color: #8b8b8b;
   }
-  &__all{
+  &__all {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 35px;
     margin-bottom: 185px;
   }
-  &__all-item{
+  &__all-item {
     width: 370px;
     height: 250px;
     border-radius: 10px;
     padding: 40px 0 35px 32px;
   }
-  &__all-content{
+  &__all-content {
     max-width: 173px;
   }
-  &__all-title{
+  &__all-title {
     @extend %DMSans-700;
     color: #191919;
     font-size: 20px;
     line-height: 24px;
   }
-  &__all-type{
+  &__all-type {
     margin-bottom: 35px;
     @extend %DMSans-700;
     color: #a3bbc8;
+  }
+}
+
+@media (max-width: 1200px) {
+  .design {
+    &__all {
+      grid-template-columns: repeat(2, 0.2fr);
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 840px) {
+  .design {
+    &__all {
+      grid-template-columns: repeat(1, 0.2fr);
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .design {
+    &__title {
+      margin-bottom: 10px;
+    }
+    &__all-item{
+      width: 280px;
+      height: 230px;
+      padding: 20px 0 10px 15px;
+    }
+    
   }
 }
