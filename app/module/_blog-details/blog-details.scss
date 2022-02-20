@@ -1,22 +1,22 @@
-.blog-details{
+.blog-details {
   padding-top: 120px;
-  &__inner{
+  &__inner {
     display: flex;
   }
-  &__content{
+  &__content {
     margin-right: 70px;
   }
-  &__content-subtitle{
+  &__content-subtitle {
     @extend %Rubik-500;
     font-size: 16px;
     color: $subtitle;
     margin-bottom: 25px;
   }
-  &__content-box{
+  &__content-box {
     position: relative;
     margin-bottom: 40px;
   }
-  &__content-info{
+  &__content-info {
     padding: 20px;
     background-color: #a3bbc8;
     font-size: 12px;
@@ -24,16 +24,16 @@
     bottom: 0;
   }
   &__content-date,
-  &__content-author{
+  &__content-author {
     padding-left: 20px;
     color: #fff;
     position: relative;
   }
-  &__content-date{
+  &__content-date {
     margin-right: 24px;
   }
-  &__content-date::before{
-    content: '';
+  &__content-date::before {
+    content: "";
     position: absolute;
     background-image: url(../images/icons/calendar-blog.svg);
     background-repeat: no-repeat;
@@ -42,8 +42,8 @@
     left: 0;
     bottom: 2px;
   }
-  &__content-author::before{
-    content: '';
+  &__content-author::before {
+    content: "";
     position: absolute;
     background-image: url(../images/icons/user.svg);
     width: 12px;
@@ -51,20 +51,20 @@
     left: 0;
     bottom: 2px;
   }
-  &__content-link{
+  &__content-link {
     color: inherit;
   }
-  &__content-title{
+  &__content-title {
     font-size: 36px;
     line-height: 44px;
     color: #333;
     margin-bottom: 30px;
   }
-  &__content-text{
+  &__content-text {
     color: $subtitle;
     margin-bottom: 40px;
   }
-  &__tip-box{
+  &__tip-box {
     background-color: #edf1f4;
     border-left: 6px solid #a3bbc8;
     padding: 20px 80px 20px 30px;
@@ -73,15 +73,15 @@
     font-size: 16px;
     margin-bottom: 45px;
   }
-  &__tip-text{
+  &__tip-text {
     margin-bottom: 16px;
   }
-  &__tip-subtext{
+  &__tip-subtext {
     padding-left: 40px;
     position: relative;
   }
-  &__tip-subtext::before{
-    content: '';
+  &__tip-subtext::before {
+    content: "";
     position: absolute;
     width: 20px;
     height: 4px;
@@ -89,82 +89,82 @@
     left: 0;
     bottom: 6px;
   }
-  &__descr{
+  &__descr {
     margin-bottom: 60px;
   }
-  &__descr-box{
+  &__descr-box {
     display: flex;
     align-items: center;
     margin-bottom: 45px;
   }
-  &__descr-img{
+  &__descr-img {
     max-width: 325px;
     max-height: 205px;
     margin-right: 30px;
-    
   }
-  &__descr-title{
+  &__descr-title {
     font-size: 18px;
     color: $subtitle;
     @extend %Rubik-500;
     margin-bottom: 20px;
   }
-  &__descr-text{
+  &__descr-text {
     font-size: 16px;
     color: #565872;
   }
-  &__designer{
+  &__designer {
     padding: 25px 20px 25px 0;
     border-top: 2px solid #ebebeb;
     border-bottom: 2px solid #ebebeb;
     display: flex;
   }
-  &__designer-photo{
+  &__designer-photo {
     width: 76px;
     height: 76px;
     margin-right: 25px;
   }
-  &__designer-box{
+  &__designer-box {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  &__designer-name{
+  &__designer-name {
     @extend %Rubik-500;
     font-size: 18px;
     line-height: 25px;
     color: #333;
     margin-bottom: 5px;
+    padding-right: 5px;
   }
-  &__designer-tags{
+  &__designer-tags {
     font-size: 16px;
     line-height: 26px;
     color: #333;
     margin-bottom: 5px;
   }
-  &__designer-tag{
+  &__designer-tag {
     margin-left: 18px;
     color: #999;
   }
-  &__designer-share{
+  &__designer-share {
     display: flex;
     align-items: center;
     font-size: 16px;
     line-height: 26px;
     color: #333;
   }
-  &__designer-items{
+  &__designer-items {
     display: flex;
     align-items: center;
   }
-  &__designer-item{
+  &__designer-item {
     margin-left: 20px;
   }
-  .filter__title{
+  .filter__title {
     color: $subtitle;
   }
-  &__title{
+  &__title {
     font-size: 24px;
     line-height: 36px;
     color: $accent;
@@ -172,14 +172,13 @@
   }
 }
 
-.filter-search{
+.filter-search {
   width: 270px;
-  &__form{
+  &__form {
     margin-bottom: 55px;
-    
   }
- 
-  &__input{
+
+  &__input {
     height: 43px;
     border: 2px solid #eef2f5;
     border-right: none;
@@ -187,7 +186,7 @@
     padding: 0 15px;
     width: 226px;
   }
-  &__btn{
+  &__btn {
     padding: 13px 15px;
     background-color: #eef2f5;
     border-radius: 5px;
@@ -241,28 +240,28 @@
   }
 }
 
-.blog-recent{
-  &__item{
+.blog-recent {
+  &__item {
     display: flex;
     margin-bottom: 20px;
   }
-  &__img{
+  &__img {
     width: 70px;
     height: 70px;
     margin-right: 18px;
   }
-  &__link{
+  &__link {
     font-size: 14px;
     line-height: 20px;
     color: #333;
   }
-  &__date{
+  &__date {
     font-size: 12px;
     color: #9a9a9a;
     padding-left: 20px;
     position: relative;
-    &::before{
-      content: '';
+    &::before {
+      content: "";
       position: absolute;
       background-image: url(../images/icons/calendar.svg);
       width: 12px;
@@ -273,51 +272,51 @@
   }
 }
 
-.comments{
+.comments {
   padding: 55px 0 80px 0;
-  &__title{
+  &__title {
     margin-bottom: 50px;
   }
-  &__item{
+  &__item {
     display: flex;
     margin-bottom: 27px;
   }
-  &__item--reply{
+  &__item--reply {
     max-width: 700px;
     margin-left: auto;
   }
-  &__content{
+  &__content {
     padding-bottom: 26px;
     border-bottom: 1px solid #e0e0e0;
   }
-  &__img{
+  &__img {
     width: 100px;
     height: 100px;
     margin-right: 27px;
   }
-  &__box{
+  &__box {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
   }
-  &__name{
+  &__name {
     @extend %Rubik-700;
     color: $accent;
   }
-  &__date{
+  &__date {
     font-size: 14px;
   }
-  &__text{
+  &__text {
     color: #565872;
     margin-bottom: 25px;
   }
-  &__reply{
+  &__reply {
     color: #516278;
     padding-right: 20px;
     position: relative;
   }
-  &__reply::after{
-    content: '';
+  &__reply::after {
+    content: "";
     position: absolute;
     background-image: url(../images/blog/comments/arrow-reply.svg);
     background-repeat: no-repeat;
@@ -328,59 +327,197 @@
   }
 }
 
-.post-comment{
+.post-comment {
   margin-bottom: 120px;
-  &__title{
+  &__title {
     margin-bottom: 45px;
   }
-  &__input-box{
+  &__input-box {
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
   }
-  &__input{
+  &__input {
     max-width: 400px;
     width: 100%;
     padding: 15px 40px 15px 20px;
-    
   }
-  &__textarea{
+  &__textarea {
     height: 120px;
     padding: 15px 20px 0;
     margin-bottom: 40px;
     resize: none;
   }
   &__input,
-  &__textarea{
+  &__textarea {
     display: block;
     width: 100%;
     border: 1px solid #e5e5e5;
-    transition: all .3s;
+    transition: all 0.3s;
     color: #333;
   }
-  &__input--name{
-   background-image: url(../images/icons/user-form.svg);
-   background-repeat: no-repeat;
-   background-position: 95% center ;
+  &__input--name {
+    background-image: url(../images/icons/user-form.svg);
+    background-repeat: no-repeat;
+    background-position: 95% center;
   }
-  &__input--email{
+  &__input--email {
     background-image: url(../images/icons/email.svg);
     background-repeat: no-repeat;
-    background-position: 95% center ;
-   }
-   &__textarea{
+    background-position: 95% center;
+  }
+  &__textarea {
     background-image: url(../images/icons/massege.svg);
     background-repeat: no-repeat;
-    background-position: 98% 15% ;
-   }
+    background-position: 98% 15%;
+  }
   &__input:hover,
-  &__textarea:hover{
+  &__textarea:hover {
     border: 1px solid #a3bbc8;
   }
-  &__btn{
+  &__btn {
     text-transform: uppercase;
     color: #fff;
     background-color: #a3bbc8;
     padding: 15px 35px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .blog-recent,
+  .filter-category {
+    display: none;
+  }
+  .filter-search {
+    width: 100%;
+    &__form {
+      width: 100%;
+    }
+    &__input {
+      width: 81%;
+    }
+  }
+  .blog-details {
+    padding-top: 60px;
+    &__inner {
+      flex-direction: column;
+    }
+    &__aside {
+      order: -1;
+      width: 100%;
+    }
+    &__content {
+      max-width: 100%;
+      width: 100%;
+    }
+    &__content-img {
+      width: 100%;
+    }
+  }
+  .post-comment {
+    &__input-box {
+      flex-direction: column;
+    }
+    &__input {
+      max-width: 100%;
+    }
+    &__input--name {
+      margin-bottom: 20px;
+      background-position: 98% center;
+    }
+    &__input--email {
+      background-position: 98% center;
+    }
+  }
+}
+
+@media (max-width: 840px) {
+  .blog-details {
+    &__descr-box {
+      flex-direction: column;
+      align-items: start;
+      margin-bottom: 35px;
+    }
+    &__descr-img {
+      margin-bottom: 20px;
+      margin-right: 0;
+    }
+  }
+  .comments {
+    padding: 27px 0 40px 0;
+    &__img {
+      width: 80px;
+      height: 80px;
+      margin-right: 16px;
+    }
+    &__text {
+      font-size: 13px;
+      line-height: 24px;
+      margin-bottom: 5px;
+    }
+    &__box {
+      margin-bottom: 10px;
+    }
+    &__content {
+      padding-bottom: 15px;
+    }
+    &__reply {
+      font-size: 14px;
+    }
+    &__item--reply {
+      margin-left: 50px;
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .comments {
+    padding: 27px 0 10px 0;
+    &__box {
+      flex-direction: column;
+    }
+    &__title {
+      margin-bottom: 20px;
+    }
+  }
+  .blog-details {
+    &__designer-photo {
+      display: none;
+    }
+    &__content-info {
+      padding: 15px 15px 15px 30px;
+    }
+    &__content-title {
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+  .post-comment {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 450px) {
+  .blog-details {
+    &__designer-box {
+      flex-direction: column;
+      align-items: start;
+    }
+    &__descr-img {
+      max-width: 100%;
+    }
+    &__content-info {
+      font-size: 10px;
+      padding: 9px;
+    }
+    &__tip-box {
+      padding: 20px;
+    }
+  }
+
+  .comments {
+    &__img {
+      display: none;
+    }
   }
 }

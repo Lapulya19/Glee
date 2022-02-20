@@ -20,6 +20,9 @@
     height: 20px;
     text-align: center;
   }
+  &__filter-btn {
+    display: none;
+  }
   .button-grid {
     margin-right: 20px;
   }
@@ -31,6 +34,7 @@
   &__all {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
     margin-bottom: 105px;
   }
@@ -333,3 +337,95 @@
   padding: 0;
 }
 
+@media (max-width: 1050px) {
+  .product-list {
+    &__inner {
+      flex-direction: column;
+    }
+    &__filter {
+      width: 100%;
+      display: none;
+    }
+    &__filter-btn {
+      display: block;
+      width: 100%;
+      height: 40px;
+      background-color: #d6d0c5;
+      margin-bottom: 20px;
+      transition: all 0.3s;
+    }
+  }
+  .filter__item {
+    width: 100%;
+  }
+  .filter-price {
+    &__label {
+      justify-content: space-around;
+    }
+  }
+  .filter-recent {
+    display: none;
+  }
+  .irs--flat {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 650px) {
+  .product-list {
+    &__all-item--line {
+      .product-list__all-title {
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 10px;
+      }
+      .product-list__all-price {
+        font-size: 26px;
+        line-height: 32px;
+        margin-bottom: 5px;
+      }
+      .product-list__text {
+        margin-bottom: 15px;
+      }
+      .product-list__box-img {
+        margin-right: 20px;
+        height: 425px;
+      }
+    }
+    &__rating.jq-ry-container {
+      margin-bottom: 15px;
+    }
+  }
+  .filter-categorycheckbox,
+  .filter-brandcheckbox {
+    padding: 5px 10px 5px 10px;
+  }
+
+  .filter-category,
+  .filter-price,
+  .filter-brand {
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 520px) {
+  .product-list {
+    &__all-item--line {
+      height: 370px;
+      .product-list__box-img {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .pagination {
+    &__item {
+      padding: 0 10px;
+    }
+    &__item + .pagination__item {
+      margin-left: 9px;
+    }
+  }
+}

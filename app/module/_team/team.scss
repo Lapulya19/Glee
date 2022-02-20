@@ -1,26 +1,26 @@
-.team{
+.team {
   margin-bottom: 62px;
   padding-top: 120px;
-  &__inner{
+  &__inner {
     display: flex;
     color: $subtitle;
     column-gap: 95px;
   }
-  &__content{
+  &__content {
     max-width: 310px;
   }
-  &__title{
+  &__title {
     text-align: left;
     color: $subtitle;
     margin-bottom: 30px;
   }
-  &__text{
+  &__text {
     margin-bottom: 40px;
   }
-  &__btn-text{
+  &__btn-text {
     @extend %Poppins-600;
   }
-  &__btn{
+  &__btn {
     @extend %btn;
     border: none;
     background-color: rgb(163, 187, 200);
@@ -30,20 +30,18 @@
     justify-content: space-between;
     align-items: center;
   }
-  &__box{
+  &__box {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     row-gap: 100px;
+    column-gap: 20px;
   }
-  &__box-item{
+  &__box-item {
     max-width: 370px;
     width: 100%;
     position: relative;
-    
-
   }
-  &__box-content{
+  &__box-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -55,20 +53,20 @@
     background-color: #fff;
     bottom: -62px;
   }
-  &__box-title{
+  &__box-title {
     font-size: 22px;
     line-height: 26px;
     color: $accent;
     margin-bottom: 12px;
   }
-  &__box-text{
+  &__box-text {
     @extend %Rubik-400;
     color: #565872;
   }
-  &__box-links{
+  &__box-links {
     display: flex;
   }
-  &__box-link{
+  &__box-link {
     width: 41px;
     height: 41px;
     border-radius: 50%;
@@ -77,7 +75,46 @@
     justify-content: center;
     align-items: center;
   }
-  &__box-link + .team__box-link{
+  &__box-link + .team__box-link {
     margin-left: 7px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .team {
+    padding-top: 50px;
+    &__inner {
+      display: block;
+    }
+    &__content {
+      max-width: 100%;
+      margin-bottom: 40px;
+    }
+    &__box {
+      column-gap: 30px;
+      justify-content: center;
+    }
+    &__title {
+      margin-bottom: 10px;
+    }
+    &__text {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .team {
+    &__box-content{
+      padding: 10px;
+      height: 115px;
+      display: block;
+    }
+    &__box-title{
+      margin-bottom: 2px;
+    }
+    &__box-text{
+      margin-bottom: 5px;
+    }
   }
 }

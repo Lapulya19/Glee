@@ -1,23 +1,53 @@
-.terms{
+.terms {
   padding-top: 115px;
   color: $subtitle;
-  &__title{
+  &__title {
     @extend %Rubik-500;
     font-size: 24px;
     line-height: 36px;
     margin-bottom: 20px;
   }
-  &__list{
+  &__list {
     margin-bottom: 60px;
     margin-left: 30px;
   }
-  &__item + .terms__item{
+  &__item + .terms__item {
     margin-top: 20px;
   }
-  &__item{
+  &__item {
     list-style: decimal-leading-zero;
   }
-  &__text{
+  &__text {
     margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .terms {
+    padding-top: 35px;
+
+    &__title {
+      margin-bottom: 10px;
+    }
+
+    &__item + .terms__item {
+      margin-top: 15px;
+    }
+
+    &__list {
+      margin-bottom: 3px;
+    }
+    &__text {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .terms {
+    &__title {
+      font-size: 20px;
+      line-height: 28px;
+    }
   }
 }
