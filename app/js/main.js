@@ -11,6 +11,12 @@ $(function () {
   })
 
 
+   //-----------------Filter-------------//
+
+   $('.product-list__filter-btn').on ('click', function(){
+    $('.product-list__filter').slideToggle();
+  });
+
   $('.filter-recent__star').rateYo({
     starWidth: '11px',
     normalFill: '#d6d6d6',
@@ -53,6 +59,14 @@ $(function () {
     slidesToScroll: 1,
     fade: true,
     arrows: false,
+    responsive:[
+      {
+        breakpoint: 521,
+        settings: {
+          draggable:true,
+        }
+      }
+    ]
   });
 
 
@@ -69,6 +83,16 @@ $(function () {
     variableWidth: true,
     nextArrow:'<button type="button" class="slick-next"><img src="images/slider/arrows-right.svg" ></button>',
     prevArrow:'<button type="button" class="slick-prev"><img src="images/slider/arrows-left.svg" ></button>',
+    responsive:[
+      {
+        breakpoint: 521,
+        settings: {
+          arrows:false,
+          slidesToShow: 1,
+          centerMode: true,
+        }
+      }
+    ]
    });
 
   $('.product-list__btn').on('click', function () {

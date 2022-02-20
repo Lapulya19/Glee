@@ -178,8 +178,9 @@
 
 @media (max-width: 520px) {
   .article {
+    padding-top: 10px;
     &__item-news {
-      left: 10%;
+      left: 15%;
     }
     &__item-info {
       font-size: 10px;

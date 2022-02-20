@@ -11,3 +11,18 @@
     
   } 
 }
+
+@media (max-width: 840px) {
+  .partners-block {
+    &__list {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__inner{
+      padding: 40px 0;
+    }
+    .partner-block__item+.partner-block__item{
+      margin-top: 20px;
+    }
+  } 
+}
